@@ -84,10 +84,10 @@ float Half(float a)
 }
 
 //5.
-bool CoinToss()
-{
-	rand()
-}
+//bool CoinToss()
+//{
+//	rand()
+//}
 
 //6. Find the error in each of the following functions and explain how to fix them
 /*
