@@ -84,10 +84,21 @@ float Half(float a)
 }
 
 //5.
-//bool CoinToss()
-//{
-//	rand()
-//}
+void CoinToss(int num)
+{
+	for (int i = 0; i < num; i++)
+	{
+		int Coin = rand() % 2;
+		if (Coin = 1)
+		{
+			std::cout << "Heads" << std::endl;
+		}
+		if (Coin = 2)
+		{
+			std::cout << "Tails" << std::endl;
+		}
+	}
+}
 
 //6. Find the error in each of the following functions and explain how to fix them
 /*
@@ -254,7 +265,41 @@ int LookandSay(int* Array, int size)
 }
 
 //17.
-
+void RockPaperScissors()
+{
+	int choice;
+	int CPU = rand() % 3;
+	std::cout << "1. = Rock  2. = Scissors  3. = Paper" << std::endl;
+	std::cin >> choice;
+	if (choice == 1 && CPU == 2)
+	{
+		std::cout << "you win!" << std::endl;
+	}
+	if (choice == 2 && CPU == 3)
+	{
+		std::cout << "you win!" << std::endl;
+	}
+	if (choice == 3 && CPU == 1)
+	{
+		std::cout << "you win!" << std::endl;
+	}
+	if (choice == 1 && CPU == 3)
+	{
+		std::cout << "you lose!" << std::endl;
+	}
+	if (choice == 2 && CPU == 1)
+	{
+		std::cout << "you lose!" << std::endl;
+	}
+	if (choice == 3 && CPU == 2)
+	{
+		std::cout << "you lose!" << std::endl;
+	}
+	else
+	{
+		std::cout << "Tie!" << std::endl;
+	}
+}
 
 int main()
 {
